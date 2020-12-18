@@ -6,7 +6,7 @@ orbs:
   technotrainer: circleci/hello-build@0.0.5
 # Orchestrate or schedule a set of jobs
 jobs:
-  build:
+  first-job-to-execute-command:
     docker:
       - image: circleci/openjdk:8u171-jdk
     steps:

@@ -10,10 +10,8 @@ workflows:
   first-workflow:
     # Run the welcome/run job in its own container
     jobs:
-      build:
-        steps:
-          - run:
-              shell: /bin/sh
-              command: |
-                echo technotrainer Running test
-                
+       steps:
+         - run:
+             command: |
+               echo technotrainer Running test
+               mkdir -p /tmp/test-results

@@ -8,10 +8,12 @@ orbs:
 jobs:
   first-job-to-execute-command:
     steps:
-      - run:
-          command: |
-            echo technotrainer Running test
-            mkdir -p /tmp/test-results
+      - checkout
+      - run: 'echo Running test'
+      #- run:
+      #   command: |
+      #      echo technotrainer Running test
+      #      mkdir -p /tmp/test-results
 workflows:
   # Name the workflow "welcome"
   first-workflow:

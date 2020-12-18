@@ -11,11 +11,11 @@ jobs:
       - image: circleci/openjdk:8u171-jdk
     steps:
       - checkout
-      - run: 'echo Running test'
-      #- run:
-      #   command: |
-      #      echo technotrainer Running test
-      #      mkdir -p /tmp/test-results
+      #- run: 'echo Running test'
+      - run:
+         command: |
+            echo technotrainer Running test
+            mkdir -p /tmp/test-results
 workflows:
   # Name the workflow "welcome"
   first-workflow:

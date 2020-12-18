@@ -5,13 +5,14 @@ orbs:
   # Declare a dependency on the hello-build
   technotrainer: circleci/hello-build@0.0.5
 # Orchestrate or schedule a set of jobs
+jobs:
+  first-job-to-execute-command:
+    steps:
+      - run:
+          command: |
+            echo technotrainer Running test
+            mkdir -p /tmp/test-results
 workflows:
   # Name the workflow "welcome"
   first-workflow:
     # Run the welcome/run job in its own container
-    jobs:
-       steps:
-         - run:
-             command: |
-               echo technotrainer Running test
-               mkdir -p /tmp/test-results
